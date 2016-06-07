@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!-- Owner Part -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/owner"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_large"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivOwnerImageRepoDetails"
+                android:layout_width="@dimen/repo_details_owner_img"
+                android:layout_height="@dimen/repo_details_owner_img"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_text_pad">
+
+                <TextView
+                    android:id="@+id/tvOwnerTitleRepoDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_large"/>
+
+                <TextView
+                    android:id="@+id/tvOwnerUrlRepoDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="@dimen/activity_text_pad"
+                    android:textSize="@dimen/font_size_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Repository Desc -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/repo_details"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_large"
+            android:textStyle="bold" />
+
+        <!-- Repo Title -->
+        <TextView
+            android:id="@+id/tvTitleRepoDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_large"
+            android:paddingTop="@dimen/activity_text_pad"/>
+
+        <!-- Repo Desc -->
+        <TextView
+            android:id="@+id/tvDescRepoDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_medium"
+            android:paddingTop="@dimen/activity_text_pad"/>
+
+        <!-- Repo URL -->
+        <TextView
+            android:id="@+id/tvUrlRepoDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_medium"
+            android:autoLink="web"
+            android:paddingTop="@dimen/activity_text_pad"/>
+    </LinearLayout>
+</ScrollView>

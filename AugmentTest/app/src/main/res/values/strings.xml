@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Augment Test</string>
+
+    <string name="loading">Loading ...</string>
+    <string name="no_data">There is no data to display</string>
+    <string name="by">By</string>
+    <string name="forked">(Forked)</string>
+    <string name="not_forked">(Not forked)</string>
+    <string name="repo_dialog_header">Do you want to go to:</string>
+    <string name="repo_html">Repository html_url</string>
+    <string name="owner_html">Owner html_url</string>
+    <string name="owner">Owner</string>
+    <string name="repo_details">Repository</string>
 </resources>
