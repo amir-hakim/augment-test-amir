@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     useLibrary 'org.apache.http.legacy'
@@ -7,7 +7,6 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.test.augment"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
@@ -25,4 +24,13 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
+
+    compile 'commons-io:commons-io:+'
+    //    compile 'org.apache.httpcomponents:httpmime:4.2.3'
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+    compile('org.apache.httpcomponents:httpmime:4.3.5') {
+        exclude module: 'org.apache.httpcomponents:httpclient'
+    }
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.android.gms:play-services:8.4.0'
 }
